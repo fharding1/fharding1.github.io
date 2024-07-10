@@ -1,67 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<title>Franklin Harding</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<style>
-		body {
-			color: #111;
-			background-color: #EEE;
-			font-family: "Times New Roman", Times, serif;
-		}
-
-		.profile {
-			display: flex;
-			max-width: 60em;
-			margin: 1em auto;
-		}
-
-		.about-me {
-			margin: 0 1em;
-		}
-
-		img {
-			margin: 1em;
-			float: right;
-			border-radius: 50%;
-			width: 15em;
-			height: 15em;
-		}
-
-		li {
-			margin: 0.5em 0;
-		}
-
-		@media screen and (max-width:990px) {
-			.profile {
-				flex-wrap: wrap;
-				flex-direction: column-reverse;
-				align-items: center;
-			}
-		}
-	</style>
-</head>
-
-<body>
+{{ define "main" }}
+  {{ .Content }}
 	<div class="profile">
 		<div class="about-me">
 			<h1>Franklin Harding</h1>
 			<p>Email: <a href="mailto:fharding1@protonmail.com">fharding1@protonmail.com</a> 
 			<p>Github: <a href="https://github.com/fharding1">fharding1</a></p>
 
-			<p>I am a student at Oregon State University studying Mathematics and Computer Science.</p>
-
-			<p>Update: I will start my PhD in Computer Science at Brown University in the fall!</p>
+			<p>I am a PhD student at Brown University studying cryptography.</p>
 
 			<h3>Papers:</h3>
 			<ul>
+				<li>Franklin Harding, Jiayu Xu. Unforgeability of Blind Schnorr in the Limited Concurrency Setting, 2024. <a href="https://eprint.iacr.org/2024/1100.pdf">[ePrint]</a></li>
 				<li>Willow Barkan-Vered, Franklin Harding, Jonathan Keller, and Jiayu Xu. On the Non-Malleability of ECVRF in the Algebraic Group Model, 2023. <a href="https://eprint.iacr.org/2023/1004.pdf">[ePrint]</a></li>
 			</ul>
 
 			<h3>Other projects:</h3>
 			<ul>
+				<li><a href="/posts/ros">How Easy is ROS with Not-So-Random Oracles?</a> (mini-project for CS517 at OSU)</li>
 				<li>A <a href="pollard-rho.pdf">short report</a> on Pollard's rho algorithm for discrete log computation</li>
 				<li><a href="https://www.crowdsupply.com/securinghw/tigard">Tigard</a>: an open-source FT2232H hardware hacking tool 
 				<li><a href="https://gloworm-vision.github.io/gloworm-docs/">Gloworm</a>: a low-cost vision tracking module for FIRST robotics competitions
@@ -70,10 +25,5 @@
 			</ul>
 		</div>
 
-		<img src="DSC_0068.jpeg" />
-	</div>
-
-
-</body>
-
-</html>
+		<img alt="Franklin Harding" src="DSC_0068.jpeg" />
+  {{ end }}

@@ -1,0 +1,4 @@
+baseURL = 'https://harding.coffee/'
+languageCode = 'en-us'
+title = 'Franklin Harding'
+theme="fharding1"

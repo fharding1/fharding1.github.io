@@ -1,0 +1,41 @@
+body {
+	color: #111;
+	background-color: #EEE;
+	font-family: "Times New Roman", Times, serif;
+}
+
+main {
+	max-width: 60em;
+	margin: 1em auto;
+
+.profile {
+	display: flex;
+}
+
+.about-me {
+	margin: 0 1em;
+}
+
+img[alt="Franklin Harding"] {
+	margin: 1em;
+	float: right;
+	border-radius: 50%;
+	width: 15em;
+	height: 15em;
+}
+
+img {
+	max-width: 80%;
+}
+
+li {
+	margin: 0.5em 0;
+}
+
+@media screen and (max-width:990px) {
+	.profile {
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+}
