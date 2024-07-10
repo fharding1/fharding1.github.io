@@ -1,7 +1,7 @@
 +++
 title = 'How Easy is ROS with Not-So-Random Oracles?'
 date = 2024-07-10T11:04:08-07:00
-draft = true
+draft = false
 +++
 
 *This was a mini project for CS 517 (Theory of Computation) at Oregon State University in Spring 2024. We had to use a SAT/SMT solver for some problem related to our research area.*
