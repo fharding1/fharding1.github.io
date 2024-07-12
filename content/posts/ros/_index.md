@@ -67,7 +67,7 @@ As a sort of test/benchmark, we can find a collision by telling Z3 to search for
 3. Pick a number $x \in \mathbb{Z}_p$ which is not $1$, say $23805$.
 4. Compute $y = (\mathsf{H}(u,v) - \lambda_0 - x \lambda_1) \lambda_2^{-1}$, in this case 1568.
 
-![[Pasted image 20240606143640.png]]
+![Time to find a linear collision](640.png)
 
 Finding a 2-ROS solution for a affine hash function is also easy. Consider that
 $$
@@ -155,11 +155,11 @@ Recall that a $2$-ROS solutions satisfies the following matrix equation $$
 
 We measured the time to find affine 2-ROS solutions for $p \in \{1013, 2027, 4097, 8219, 16363, 32717, 65521\}$ and random keys $s$. Only one choice of $p$ ($65521$) and $s$ did not yield a solution in less than 960 seconds, and we excluded this point from the plot.
 
-![[Pasted image 20240606133601.png]]
+![Time to find affine 2-ROS solution](601.png)
 
 The data for FNV32-1a 2-ROS is less clear because even for small parameters like $\lambda=10$, finding a 2-ROS solution with some $s$-values took more than 960 seconds. Any points in the plot below situated at the top correspond to instances which were not solved in less than 960 seconds. We treat those values as 960 when computing the average trendline. In reality the average could be much higher, but we note that only slightly less than half of the instances are solvable in time less than the average trendline. It is not clear why some salts make a given FNV32-1a 2-ROS problem much harder even for a fixed prime.
 
-![[Pasted image 20240606165923.png]]
+![Time to find FNV32-1a 2-ROS solution](923.png)
 
 Interestingly, the data show that while finding a 2-ROS solution takes longer than finding a collision for affine hash functions, the opposite is true for FNV32-1a. That is, while Z3 was unable to find any FNV32-1a collisions in a reasonable amount of time for randomly chosen salts, it was able to find many FNV32-1a 2-ROS solutions.
 
