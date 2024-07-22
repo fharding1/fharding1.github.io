@@ -2,11 +2,21 @@ body {
 	color: #111;
 	background-color: #EEE;
 	font-family: "Times New Roman", Times, serif;
+	line-height: 1.5;
 }
 
 main {
-	max-width: 60em;
+	max-width: 50em;
 	margin: 1em auto;
+}
+
+.links {
+	display:flex;
+}
+
+.links a {
+	margin: 0 1em 0 0;
+}
 
 .profile {
 	display: flex;
@@ -20,8 +30,8 @@ img[alt="Franklin Harding"] {
 	margin: 1em;
 	float: right;
 	border-radius: 50%;
-	width: 15em;
-	height: 15em;
+	width: 10em;
+	height: 10em;
 }
 
 img {
