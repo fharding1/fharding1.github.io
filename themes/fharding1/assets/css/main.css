@@ -36,6 +36,13 @@ img[alt="Franklin Harding"] {
 
 img {
 	max-width: 80%;
+	max-height: 25em;
+	display: block;
+	margin: 1em;
+}
+
+img[src$='#right'] {
+	float: right;
 }
 
 li {
@@ -47,5 +54,10 @@ li {
 		flex-wrap: wrap;
 		flex-direction: column-reverse;
 		align-items: center;
+	}
+
+	img[src$='#right'] {
+		float: none;
+		margin: 1em auto;
 	}
 }
