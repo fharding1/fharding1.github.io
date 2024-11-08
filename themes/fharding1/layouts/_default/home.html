@@ -2,15 +2,25 @@
   {{ .Content }}
 	<div class="profile">
 		<div class="about-me">
+			<div class="title">
 			<h1 id="my-name">Franklin Harding</h1>
-			<div class="links">
-			<a href="mailto:fharding1@protonmail.com">fharding1@protonmail.com</a> 
-			<a href="https://github.com/fharding1">Github</a>
+			
+						</div>
 
-			<a href="/franklinharding.pgp">PGP Key</a>
+			<div class="description">
+			<img alt="Franklin Harding" src="DSC_0068.jpeg" />
+			<div class="links-summary">
+<div class="links">
+				<a href="mailto:fharding1@protonmail.com">fharding1@protonmail.com</a> 
+				<a href="https://github.com/fharding1">Github</a>
+
+				<a href="/franklinharding.pgp">PGP Key</a>
 			</div>
 
-			<p>I am a PhD student at Brown University studying cryptography.</p>
+
+			<p>I am a first-year computer science Ph.D. student at Brown University studying cryptography under the guidance of <a href="https://cs.brown.edu/people/alysyans/">Anna Lysyanskaya</a>. Currently I am focused on cryptographic protocols that can be leveraged to create fairer and more privacy-conscious systems. The techniques involved are often bizarre and accomplish seemingly impossible tasks. For example, a <a href="https://en.wikipedia.org/wiki/Blind_signature">blind signature scheme</a> is the digital analog of physically sealing a document in a carbon-paper envelope before having it signed. I received my bachelor's in Mathematics from Oregon State University.</p>
+			</div>
+			</div>
 
 			<h3>Papers:</h3>
 			<ul>
@@ -20,15 +30,14 @@
 
 			<h3>Other projects:</h3>
 			<ul>
-				<li>Go libraries for <a href="https://github.com/fharding1/blindschnorr">Blind Schnorr</a> and <a href="https://github.com/fharding1/snowblind">Snowblind</a></li>
-				<li><a href="/posts/ros">How Easy is ROS with Not-So-Random Oracles?</a> (mini-project for CS517 at OSU)</li>
-				<li>A <a href="pollard-rho.pdf">short report</a> on Pollard's rho algorithm for discrete log computation</li>
+				<li>Go libraries for <a href="https://github.com/fharding1/blindschnorr">blind Schnorr</a> and <a href="https://github.com/fharding1/snowblind">Snowblind</a></li>
+				<li><a href="/posts/ros">How Easy is ROS with Not-So-Random Oracles?</a> (CS517 project where we had to use an SMT solver)</li>
 				<li><a href="https://www.crowdsupply.com/securinghw/tigard">Tigard</a>: an open-source FT2232H hardware hacking tool 
 				<li><a href="https://gloworm-vision.github.io/gloworm-docs/">Gloworm</a>: a low-cost vision tracking module for FIRST robotics competitions
 				<li>Web challenges for the <a href="https://github.com/BSidesPDX/CTF-2019">BSidesPDX 2019 Capture the Flag</a> hacking competition</li>
 				<li><a href="https://github.com/Pigmice2733/peregrine-backend">Peregrine</a>: a scouting app for FIRST robotics teams
 			</ul>
+
 		</div>
 
-		<img alt="Franklin Harding" src="DSC_0068.jpeg" />
   {{ end }}

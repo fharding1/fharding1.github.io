@@ -7,11 +7,16 @@ body {
 
 main {
 	max-width: 50em;
-	margin: 1em auto;
+	margin: 0 auto;
 }
 
 .links {
 	display:flex;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
 }
 
 .links a {
@@ -22,23 +27,22 @@ main {
 	display: flex;
 }
 
-.about-me {
-	margin: 0 1em;
+.description {
+	display: flex;
 }
 
+
 img[alt="Franklin Harding"] {
-	margin: 1em;
-	float: right;
-	border-radius: 50%;
-	width: 10em;
-	height: 10em;
+	float: left;
+	width: 13em;
+	height: 13em;
+	margin-right: 1em
 }
 
 img {
 	max-width: 80%;
 	max-height: 25em;
 	display: block;
-	margin: 1em;
 }
 
 img[src$='#right'] {
@@ -50,7 +54,21 @@ li {
 }
 
 @media screen and (max-width:990px) {
-	.profile {
+	.about-me,.links-summary, .description {
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.links {
+		justify-content: center;
+	}
+
+	img[alt="Franklin Harding"] {
+		margin-bottom: 1em;
+	}
+
+	.profile, .title {
 		flex-wrap: wrap;
 		flex-direction: column-reverse;
 		align-items: center;
