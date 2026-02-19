@@ -1,0 +1,3 @@
+# want to send me an encrypted message? download this file as fh.txt, then install age and run
+# > age -R fh.txt your_message.txt > your_message_encrypted.txt.age
+age1axz9sqykawrm2kcfrc36lxua0eyk07etr8jv8xq4vu6k4d6yeyvs096kqr
